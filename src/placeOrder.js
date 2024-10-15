@@ -9,6 +9,11 @@ async function placeOrder() {
     throw new Error("No ask Id found");
   }
 
+  if (fs.existsSync("output/orderId.txt")) {
+    console.log("Order already placed");
+    return;
+  }
+
   const askId = fs.readFileSync("output/askId.txt", "utf8");
 
   const {

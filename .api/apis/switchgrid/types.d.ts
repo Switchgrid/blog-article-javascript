@@ -1,0 +1,18 @@
+import type { FromSchema } from 'json-schema-to-ts';
+import * as schemas from './schemas';
+export type AskBodyParam = FromSchema<typeof schemas.Ask.body>;
+export type AskMetadataParam = FromSchema<typeof schemas.Ask.metadata>;
+export type AskResponse200 = FromSchema<typeof schemas.Ask.response['200']>;
+export type GetAskMetadataParam = FromSchema<typeof schemas.GetAsk.metadata>;
+export type GetAskProofMetadataParam = FromSchema<typeof schemas.GetAskProof.metadata>;
+export type GetAskProofResponse200 = FromSchema<typeof schemas.GetAskProof.response['200']>;
+export type GetAskResponse200 = FromSchema<typeof schemas.GetAsk.response['200']>;
+export type GetAsksMetadataParam = FromSchema<typeof schemas.GetAsks.metadata>;
+export type GetAsksResponse200 = FromSchema<typeof schemas.GetAsks.response['200']>;
+export type GetOrderMetadataParam = FromSchema<typeof schemas.GetOrder.metadata>;
+export type GetOrderResponse200 = FromSchema<typeof schemas.GetOrder.response['200']>;
+export type GetRequestDataMetadataParam = FromSchema<typeof schemas.GetRequestData.metadata>;
+export type OrderBodyParam = FromSchema<typeof schemas.Order.body>;
+export type OrderResponse200 = FromSchema<typeof schemas.Order.response['200']>;
+export type SearchContractMetadataParam = FromSchema<typeof schemas.SearchContract.metadata>;
+export type SearchContractResponse200 = FromSchema<typeof schemas.SearchContract.response['200']>;

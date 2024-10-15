@@ -1,0 +1,30 @@
+{
+  "name": "starter-typescript",
+  "version": "1.0.0",
+  "description": "Starter project to use Switchgrid's API",
+  "main": "index.js",
+  "scripts": {
+    "reset": "rm -rf output",
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "update-api": "rm -rf .api && npx api install https://app.switchgrid.tech/openapi-spec/json -y -i switchgrid -l js-cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Switchgrid/starter-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Switchgrid/starter-typescript/issues"
+  },
+  "homepage": "https://github.com/Switchgrid/starter-typescript#readme",
+  "dependencies": {
+    "@api/switchgrid": "file:.api/apis/switchgrid",
+    "dotenv": "^16.4.5",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

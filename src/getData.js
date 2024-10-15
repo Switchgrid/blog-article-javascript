@@ -5,10 +5,22 @@ async function getData() {
   const orderId = fs.readFileSync("output/orderId.txt", "utf8");
 
   const {
-    data: { requests },
+    data: { requests, status },
   } = await switchgrid.getOrder({
     orderId,
   });
+
+  if (status === "PENDING_REQUESTS") {
+    console.error(
+      "🟠 The data is not yet available, please retry in a couple of minutes"
+    );
+    return;
+  }
+
+  if (status === "SOME_REQUESTS_FAILED") {
+    console.error("❌ Some requests have failed.");
+    return;
+  }
 
   if (requests[0] === undefined) {
     console.error("No request found");

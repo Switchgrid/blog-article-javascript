@@ -6,6 +6,7 @@ const { getData } = require("./src/getData");
 const { placeOrder } = require("./src/placeOrder");
 const { signAsk } = require("./src/signAsk");
 const { userPressEnter } = require("./src/userPressEnter");
+const { exit } = require("process");
 
 async function program() {
   try {
@@ -16,6 +17,7 @@ async function program() {
     await placeOrder();
     await userPressEnter("press Enter to try to collect the data");
     await getData();
+    exit(0);
   } catch (error) {
     console.error(`❌ ${error.message}`);
     if (error.data) {

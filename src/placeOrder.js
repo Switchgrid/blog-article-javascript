@@ -5,8 +5,8 @@ async function placeOrder() {
   switchgrid.auth(process.env.API_TOKEN);
 
   // Take the first consentId to do the order
-  if (fs.existsSync("output/orderId.txt")) {
-    return;
+  if (!fs.existsSync("output/askId.txt")) {
+    throw new Error("No ask Id found");
   }
 
   const askId = fs.readFileSync("output/askId.txt", "utf8");

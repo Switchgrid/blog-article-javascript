@@ -5,6 +5,10 @@ const { userPressEnter } = require("./userPressEnter");
 async function signAsk() {
   switchgrid.auth(process.env.API_TOKEN);
 
+  if (!fs.existsSync("output/askId.txt")) {
+    return;
+  }
+
   const askId = fs.readFileSync("output/askId.txt", "utf8");
 
   const {

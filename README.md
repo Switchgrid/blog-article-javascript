@@ -1,4 +1,4 @@
-# starter-javascript
+# Get your smart meter data with Switchgrid
 Start Repo to get started with Switchgrid
 
 This project uses https://github.com/readmeio/api
@@ -18,7 +18,6 @@ If you want to erase all the data and start fresh, run `npm run reset`
 1. Install the API SDK
     - run `npx api install https://app.switchgrid.tech/openapi-spec/json -y -i switchgrid -l js-cjs`
     - Follow instructions
-
 
 
 ## To update the API in this project 

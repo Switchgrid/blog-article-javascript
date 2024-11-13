@@ -4,7 +4,7 @@
     {
       "identifier": "switchgrid",
       "source": "https://app.switchgrid.tech/openapi-spec/json",
-      "integrity": "sha512-LKYzJk6XvLK/02pAVX98kFcFI/+iGtcSWlkza2eKt97udAQOCLydKcxDwzhFcuBixs0lQ2FcnmEnaLdoyFiBBw==",
+      "integrity": "sha512-coV+QEcNNhkIzh0150h8krqN2sG6YVyIjt5RNa+/Hd0X6dUuWQsBtORmlj6hFZZL43WlgCIWCiEyKNXG459fag==",
       "installerVersion": "6.1.2"
     }
   ]

@@ -35,7 +35,7 @@ async function placeOrder() {
   const consentId = consentIdsArray[0];
 
   const {
-    data: { orderId },
+    data: { id: orderId },
   } = await switchgrid.order({
     consentId,
     requests: [

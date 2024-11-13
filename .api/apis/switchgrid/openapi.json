@@ -3796,7 +3796,7 @@
         },
         "responses": {
           "200": {
-            "description": "Order created successfully",
+            "description": "Order details",
             "content": {
               "application/json": {
                 "schema": {
@@ -3995,7 +3995,7 @@
                       "examples": [
                         [
                           {
-                            "id": "1780ad43-5ec4-4b3a-a0ca-13d7a1fd56ed",
+                            "id": "6bf1d1ec-a003-4354-9602-a57fef06bd8d",
                             "type": "C68",
                             "status": "SUCCESS",
                             "completedAt": "2021-09-01T00:02:00.000Z",
@@ -4234,7 +4234,7 @@
                       "examples": [
                         [
                           {
-                            "id": "1780ad43-5ec4-4b3a-a0ca-13d7a1fd56ed",
+                            "id": "6bf1d1ec-a003-4354-9602-a57fef06bd8d",
                             "type": "C68",
                             "status": "SUCCESS",
                             "completedAt": "2021-09-01T00:02:00.000Z",
@@ -6443,7 +6443,7 @@
             "examples": [
               [
                 {
-                  "id": "1780ad43-5ec4-4b3a-a0ca-13d7a1fd56ed",
+                  "id": "6bf1d1ec-a003-4354-9602-a57fef06bd8d",
                   "type": "C68",
                   "status": "SUCCESS",
                   "completedAt": "2021-09-01T00:02:00.000Z",
